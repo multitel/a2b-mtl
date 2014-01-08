@@ -110,7 +110,6 @@ INSERT INTO `mtl_services` VALUES (2,'Professional',2,4,'2.500',4,'4.000',4,'0.0
 INSERT INTO `mtl_services` VALUES (3,'Business',2,3,'2.00',4,'3.000',3,'0.010',3000,6,'0.930','0.5','');
 ```
 
-```text
 ---------------------------------------------------------------------------------
 Step 4:  Adding links in customer interface
 ---------------------------------------------------------------------------------
@@ -118,11 +117,11 @@ Step 4:  Adding links in customer interface
 - Go into customer folder  (cd /your/path/to/a2b/customer )
 - edit templates/default/main.tpl , go to line 61 (just after the {/if} statement closure)
 - Add the following three lines:
-```
+
 ```html
-    &lt;div class="toggle_menu"&gt;&lt;li&gt;&lt;a href="mtl.intldid.php?action=list"&gt;&lt;strong&gt;International DIDs&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;&lt;/div&gt;<br>
-    &lt;div class="toggle_menu"&gt;&lt;li&gt;&lt;a href="mtl.faxmessages.php?action=list"&gt;&lt;strong&gt;Fax &lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;&lt;/div&gt;<br>
-    &lt;div class="toggle_menu"&gt;&lt;li&lt;&lt;a href="mtl.smslogs.php?action=list"&gt;&lt;strong&gt;SMS&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;&lt;/div&gt; <br>
+    <div class="toggle_menu"><li><a href="mtl.intldid.php?action=list"><STRONG>International DIDs</strong></a></li></div>
+    <div class="toggle_menu"><li><a href="mtl.faxmessages.php?action=list"><STRONG>FAX MESSAGES</strong></a></li></div>
+    <div class="toggle_menu"><li><a href="mtl.smslogs.php?action=list"><STRONG>SMS</strong></a></li></div>
 ```
 (in addition to that, there is a sample main.tpl file included in the the tmp folder, which you could use to replace your own main.tpl file if yours has no custom mods)
 
