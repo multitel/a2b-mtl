@@ -31,13 +31,11 @@ $api_pass = 'demo';   		// your http://www.multitel.net password (or API passwor
 
 
 
-
-
 if ($api_type == 'development') { 
-	$api_url = 'http://api.multitel.net:91';
+	$api_url = 'http://api.multitel.net:91/?wsdl';
 } 
 elseif ($api_type == 'production') { 
-	$api_url = 'http://api.multitel.net:81';
+	$api_url = 'http://api.multitel.net:81/?wsdl';
 } else { 
 	$api_url = 'http://localhost/';
 }
