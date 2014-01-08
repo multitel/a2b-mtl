@@ -116,9 +116,9 @@ Step 4:  Adding links in customer interface
 - edit templates/default/main.tpl , go to line 61 (just after the {/if} statement closure)
 - Add the following three lines:
  
-    &lt;div class="toggle_menu"&gt;&lt;li&gt;&lt;a href="mtl.intldid.php?action=list"&gt;&lt;STRONG&gt;International DIDs&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;&lt;/div&gt;
-    &lt;div class="toggle_menu"&gt;&lt;li&gt;&lt;a href="mtl.faxmessages.php?action=list"&gt;&lt;STRONG&gt;Fax Messages&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;&lt;/div&gt;
-    &lt;div class="toggle_menu"&gt;&lt;li&lt;&lt;a href="mtl.smslogs.php?action=list"&lt;&gt;STRONG&gt;SMS&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;&lt;/div&gt;  
+    &lt;div class="toggle_menu"&gt;&lt;li&gt;&lt;a href="mtl.intldid.php?action=list"&gt;&lt;STRONG&gt;International DIDs&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;&lt;/div&gt;<br>
+    &lt;div class="toggle_menu"&gt;&lt;li&gt;&lt;a href="mtl.faxmessages.php?action=list"&gt;&lt;STRONG&gt;Fax Messages&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;&lt;/div&gt;<br>
+    &lt;div class="toggle_menu"&gt;&lt;li&lt;&lt;a href="mtl.smslogs.php?action=list"&lt;&gt;STRONG&gt;SMS&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;&lt;/div&gt; <br>
 
 (in addition to that, there is a sample main.tpl file included in the the tmp folder, which you could use to replace your own main.tpl file)
 
