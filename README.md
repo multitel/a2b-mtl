@@ -18,6 +18,7 @@ Installation:
 Step 1:  You'll have to create four new tables
 ---------------------------------------------------------------------------------
 
+```mysql
 CREATE TABLE `mtl_rcvd_fax` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `cc_card_id` int(11) DEFAULT NULL,
@@ -90,24 +91,24 @@ CREATE TABLE `mtl_services` (
   `date_created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
-
+```
 
 ---------------------------------------------------------------------------------
 Step 2:  Creating new DID groups (we use DID groups to define pricing at step 3)
 ---------------------------------------------------------------------------------
-
+```mysql
 insert into cc_didgroup set didgroupname='Starter';
 insert into cc_didgroup set didgroupname='Professional';
 insert into cc_didgroup set didgroupname='Business';
-
+```
 ---------------------------------------------------------------------------------
 Step 3:  Creating sample services
 ---------------------------------------------------------------------------------
-
+```mysql
 INSERT INTO `mtl_services` VALUES (1,'Starter',1,5,'3.000',5,'5.000',5,'0.020',1500,10,'0.990','0.5','');
 INSERT INTO `mtl_services` VALUES (2,'Professional',2,4,'2.500',4,'4.000',4,'0.015',2000,8,'0.960','0.5','');
 INSERT INTO `mtl_services` VALUES (3,'Business',2,3,'2.00',4,'3.000',3,'0.010',3000,6,'0.930','0.5','');
-
+```
 ---------------------------------------------------------------------------------
 Step 4:  Adding links in customer interface
 ---------------------------------------------------------------------------------
