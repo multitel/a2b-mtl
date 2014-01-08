@@ -119,9 +119,9 @@ Step 4:  Adding links in customer interface
 - Add the following three lines:
 
 ```html
-    <div class="toggle_menu"><li><a href="mtl.intldid.php?action=list"><STRONG>International DIDs</strong></a></li></div>
-    <div class="toggle_menu"><li><a href="mtl.faxmessages.php?action=list"><STRONG>FAX MESSAGES</strong></a></li></div>
-    <div class="toggle_menu"><li><a href="mtl.smslogs.php?action=list"><STRONG>SMS</strong></a></li></div>
+<div class="toggle_menu"><li><a href="mtl.intldid.php?action=list"><STRONG>International DIDs</strong></a></li></div>
+<div class="toggle_menu"><li><a href="mtl.faxmessages.php?action=list"><STRONG>FAX MESSAGES</strong></a></li></div>
+<div class="toggle_menu"><li><a href="mtl.smslogs.php?action=list"><STRONG>SMS</strong></a></li></div>
 ```
 (in addition to that, there is a sample main.tpl file included in the the tmp folder, which you could use to replace your own main.tpl file if yours has no custom mods)
 
