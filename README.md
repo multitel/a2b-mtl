@@ -94,7 +94,7 @@ CREATE TABLE `mtl_services` (
 ```
 
 ---------------------------------------------------------------------------------
-Step 2:  Creating new DID groups (we use DID groups to define pricing at step 3)
+Step 2:  Creating new DID groups 
 ---------------------------------------------------------------------------------
 ```mysql
 insert into cc_didgroup set didgroupname='Starter';
