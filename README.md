@@ -111,7 +111,14 @@ INSERT INTO `mtl_services` VALUES (3,'Business',2,3,'2.00',4,'3.000',3,'0.010',3
 ```
 
 ---------------------------------------------------------------------------------
-Step 4:  Adding links in customer interface
+Step 4:  Alter cc_did table to allow specifying providers
+---------------------------------------------------------------------------------
+
+```mysql
+alter table cc_did add provider int(3) not null default 0;
+```
+---------------------------------------------------------------------------------
+Step 5:  Adding links in customer interface
 ---------------------------------------------------------------------------------
 
 - Go into customer folder  (cd /your/path/to/a2b/customer )
