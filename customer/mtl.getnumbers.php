@@ -85,7 +85,7 @@ $total_data = count($datas);
         */
 		foreach($datas as $data)
 		{
-			
+			if ($data['Number']!='-100') {
 			 $row = array();
 			 $setup_cost 	= setupcost($data['SetupCost'],$service_info);
 			 $monthly_cost	= monthlycost($data['MonthlyCharges'],$service_info);
@@ -101,8 +101,8 @@ $total_data = count($datas);
 			 $row['free_minutes'] = $freeminutes;
 			 $row['country'] = $data['Country'];
 			 $row['DT_RowId'] = $data['Number'];			 			 
-
 			 $output['aaData'][] = $row;
+			}
 		}
 
        echo json_encode($output);
