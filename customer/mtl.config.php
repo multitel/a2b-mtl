@@ -23,20 +23,10 @@ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-$api_type = 'development';	// possible values : development or production
 $api_user = 'demo';		// your http://www.multitel.net username (or API username)
 $api_pass = 'demo';   		// your http://www.multitel.net password (or API password)
 
 
+$api_url = 'http://api.multitel.net/?wsdl';
 
-
-
-if ($api_type == 'development') { 
-	$api_url = 'http://api.multitel.net:91/?wsdl';
-} 
-elseif ($api_type == 'production') { 
-	$api_url = 'http://api.multitel.net:81/?wsdl';
-} else { 
-	$api_url = 'http://localhost/';
-}
 ?>
